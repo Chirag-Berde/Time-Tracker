@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* main app css */
+.app {
+  margin: 10px auto;
+  border: 2px solid black;
+  width: 50%;
+}
+
+.app h1 {
+  text-align: center;
+  margin: 10px 10px;
+}
+
+/* project form css */
+.projectForm {
+  display: flex;
+  justify-content: center;
+}
+
+.projectForm input {
+  margin-left: 10px;
+}
+
+.projectForm button {
+  margin-left: 10px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.projectForm button:hover {
+  cursor: pointer;
+  border-color: blueviolet;
+  color: white;
+  background-color: black;
+}
+
+/* taskForm css */
+.taskForm {
+  margin: 20px 10px;
+  display: grid;
+  place-items: center;
+}
+
+.taskForm h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.taskForm input,
+.taskForm textarea {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.taskForm button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.taskForm button:hover {
+  cursor: pointer;
+  border-color: blueviolet;
+  color: white;
+  background-color: black;
+}
+
+/* TimeTracker css */
+.timeTracker{
+  margin-bottom: 10px;
+}
+.timeTracker h2 {
+  text-align: center;
+
+}
