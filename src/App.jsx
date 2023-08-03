@@ -23,7 +23,9 @@ const TimeTrackerApp = () => {
   }, [projects, tasks]);
 
   const addProject = (projectName) => {
+  
     setProjects([...projects, projectName]);
+
   };
 
   const addTask = (project, taskName, timeSpent, description) => {
@@ -32,7 +34,7 @@ const TimeTrackerApp = () => {
     newTasks[project].push({ taskName, timeSpent, description });
 
     setTasks(newTasks);
-  };
+zx  };
 
   useEffect(() => {
     let total = 0;

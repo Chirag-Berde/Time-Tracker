@@ -5,8 +5,13 @@ const ProjectForm = ({ addProject }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        addProject(projectName);
-        setProjectName("");
+        if(projectName===''){
+            alert("Enter project name to continue")
+        }else{
+
+            addProject(projectName);
+            setProjectName("");
+        }
     };
 
     return (
