@@ -8,10 +8,15 @@ const TaskForm = ({ project, addTask ,tasks}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addTask(project, taskName, parseFloat(timeSpent), description);
-    setTaskName("");
-    setTimeSpent(0);
-    setDescription("");
+    if(taskName.length>0 && timeSpent>0 && description.length>0){
+      addTask(project, taskName, parseFloat(timeSpent), description);
+      setTaskName("");
+      setTimeSpent(0);
+      setDescription("");
+    }else{
+      alert('Please fill the taskname')
+
+    }
   };
 
   return (
